@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building container images'
-        sh """docker build . """
+        sh """docker build -t counter:1.0.0 ."""
       }
     }
     stage('Publish') {
