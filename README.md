@@ -9,8 +9,12 @@ Clone the repo and run the server.
 ```shell
 git clone git@github.com:cloudqubes/counter.git
 cd counter
-go run counter.go
+go run .
 ```
+
+Note that `go run main.go` will not work since the there are multiple `.go` files in the same package.
+
+Also `go run *.go` will give an error because of the presence of the test file `counter_test.go`.
 
 # How counter works
 
@@ -29,7 +33,10 @@ Reduce counter by 1.
 
 # Testing
 
-`counter 1.0.0`` does not include testing.
+`counter v2`` includes testing.
+```shell
+go test *.go
+```
 
 # Using Jenkins
 
