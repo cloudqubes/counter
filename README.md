@@ -1,5 +1,5 @@
 # Overview
-`counter` is a simple Go lang application that can count up and down based on HTTP request.
+`counter` is a simple Go lang application that counts up or down based on HTTP request.
 
 We use `counter` for demonstrating and testing CI/CD pipelines.
 
@@ -29,7 +29,7 @@ Reduce counter by 1.
 
 # Testing
 
-`counter 1.0.0`` does not include testing.
+`counter v1`` does not include testing.
 
 # Using Jenkins
 
